@@ -11,12 +11,13 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
+          <li>The head element contains information about the webpage. Remember that the head element contains meta information for the browser. We add links to related files here to tell the browser what's included in our website and how these files should interact.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>The h1, h2, h3, h4, h5, and h6 elements represent the level of heading a given text block represents.</li>
           <li>The p element represents a paragraph or block of text.</li>
@@ -51,7 +52,22 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>First, we creat a new JavaScript file named, e.g. script.js. In that file, we add a variable called, e.g. topics with a value of a string, "HTML, CSS, Git, JavaScript". Then, we use the console.log method to log the variable to the web console in the browser. We connecte script.js to index.html by adding a script element under the footer. We also add a message to the header to improve the user's experience by reminding them to open the console. We open Chrome DevTools to find the value of topics being logged to the console, as expected.</li>
+          <li>In JavaScript, to declare a variable, we use the var keyword. After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>We can use the console.log method to output a message to the web console by adding an argument.</li>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+          <li>An if statement is a way of introducing decision-making into our code. When creating an if statement, we provide one or more conditions for the computer to evaluate. If one condition is truthy, the computer will execute the code that we provide between curly brackets. But if the condition is not truthy, the code will not execute, interrupting the control flow. Interrupting the control flow in this way allows us to build apps that respond to a user's actions.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>To work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. This location is identified with a unique number called an index. Using each piece of data's index, or location number, we can access individual data inside the array.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. </li>
+          <li>In order to use the for loop, we need the index and the array's length. The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array.</li>
+          <li>We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
+          <li>A for loop contains the following three important statements: The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 (because the first index of an array is always 0). The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. We use the length built-in array property on our shapes array to express that condition. The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1.</li>
+          <li>Functions are reusable blocks of code that contain instructions to perform a specific task. To declare a function, we use the function keyword and then give our function a unique name followed by parentheses (). Then we add curly brackets {} that contain the code for the task we want to perform.</li>
+          <li>To comment out multiple lines of JavaScript code, put /* before and */ after the block of code</li>
+          <li>Math.floor() and Math.random() are both properties of JavaScript's built-in Math object that can be used together to generate a random number.</li>
         </ul>
       </section>
     </main>
@@ -59,5 +75,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
